@@ -1,12 +1,13 @@
 import styles from "./navbar.module.css";
 import { Link } from "react-router-dom";
-import { Mainnet, useEtherBalance, useEthers, Config } from '@usedapp/core'
-import { getMarketContract, getTokenContract } from "./api/blockchainService";
+import { useEtherBalance, useEthers } from '@usedapp/core'
+// import { getMarketContract, getTokenContract } from "./api/blockchainService";
 
 
 export default function NavBar() {
   const { activateBrowserWallet, deactivate, account } = useEthers()
   const userBalance = useEtherBalance(account)
+  console.log(userBalance)
   
     return (
       <div className={styles.all}>
