@@ -88,6 +88,7 @@ function CreateItem(props) {
       image: imageCID,
     });
     const added = await client.add(tokenURI);
+    console.log(added)
     // await createMarketSale(added.path);
 
     navigate("/");
