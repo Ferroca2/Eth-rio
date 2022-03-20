@@ -92,6 +92,9 @@ textarea{
     border: 2px solid #7910FF;
     cursor: pointer;
 }
+.price{
+    margin-top: 3rem;
+}
 .uploaderWrapper{
     height: 7rem;
 }
